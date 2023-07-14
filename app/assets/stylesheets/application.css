@@ -67,3 +67,91 @@
 .homePageBtn:hover {
   background-color: #555555;
 }
+
+/* Form container */
+.credential-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Form title */
+.credential-form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Form fields container */
+.container-form {
+  width: 400px;
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+/* Form fields */
+.field {
+  margin-bottom: 20px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333333;
+}
+
+.field input[type="text"]::placeholder,
+.field input[type="email"]::placeholder,
+.field input[type="password"]::placeholder {
+  color: #999999;
+}
+
+/* Form submit button */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.actions input[type="submit"] {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: #555555;
+}
+
+/* Form error messages */
+#error_explanation {
+  color: #ff0000;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#error_explanation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#error_explanation li {
+  list-style: none;
+  margin-bottom: 5px;
+}
