@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homeMainDib {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.homeAppNameDiv {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.homeAppNameDiv h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333333;
+  margin: 0;
+}
+
+.HomepageBtnsDiv {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.homePageBtn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homePageBtn:hover {
+  background-color: #555555;
+}
