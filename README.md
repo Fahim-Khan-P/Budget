@@ -48,7 +48,7 @@ Budget Mate is a web application that helps users keep track of their personal f
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo](https://budget-mate-z4ax.onrender.com//) -->
+- [Live Demo](https://budgetapp-2v68.onrender.com/)
 
 ### Key Features <a name="key-features"></a>
 
