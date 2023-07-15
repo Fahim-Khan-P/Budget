@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- body {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -220,7 +220,8 @@ a {
   padding: 16px;
 }
 
-.add-category-link, .add-transaction-link {
+.add-category-link, 
+.add-transaction-link {
   position: fixed;
   bottom: 4px;
   width: 100%;
@@ -256,7 +257,6 @@ a {
   align-items: center;
   background-color: rgb(143, 146, 143);
   padding: 16px;
-  /* margin: 25 */
 }
 
 .add-transaction:hover {
