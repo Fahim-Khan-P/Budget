@@ -19,6 +19,9 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 .homeMainDib {
   display: flex;
   flex-direction: column;
@@ -154,4 +157,83 @@
 #error_explanation li {
   list-style: none;
   margin-bottom: 5px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.category-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 16px;
+}
+
+.category-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.category-header i {
+  font-size: 24px;
+}
+
+.category {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin-bottom: 16px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.category-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.cname {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ctotal {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 8px 0 0;
+}
+
+.no-data {
+  font-size: 1.25rem;
+  padding: 16px;
+}
+
+.add-category {
+  display: flex;
+  justify-content: center;
+  background-color: #015a01;
+  color: white;
+}
+
+.add-category:hover {
+  opacity: 0.7;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 20px
 }

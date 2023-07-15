@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
+    @user = current_user
     @categories = Category.includes(:payments).where(user_id: current_user.id).order(updated_at: :desc)
   end
 
