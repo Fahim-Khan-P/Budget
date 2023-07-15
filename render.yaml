@@ -1,18 +1,18 @@
 databases:
-  - name: budget
-    databaseName: budget_5ykl
-    user: budget_5ykl_user
+  - name: khan
+    databaseName: khan_rzqc
+    user: khan_rzqc_user
 
 services:
   - type: web
-    name: moneyapps
+    name: money
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: budget_5ykl
+          name: khan_rzqc
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
