@@ -13,3 +13,252 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.homeMainDib {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.homeAppNameDiv {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.homeAppNameDiv h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin: 0;
+}
+
+.HomepageBtnsDiv {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.homePageBtn {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+  border: none;
+  padding: 15px 30px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homePageBtn:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+/* Form container */
+.credential-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px;
+  margin-left: 30vh;
+}
+
+/* Form title */
+.credential-form h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+/* Form fields container */
+.container-form {
+  width: 400px;
+  padding: 60px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 4px;
+}
+
+/* Form fields */
+.field {
+  margin-bottom: 20px;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+}
+
+.field input[type="text"]::placeholder,
+.field input[type="email"]::placeholder,
+.field input[type="password"]::placeholder {
+  color: rgb(153, 153, 153);
+}
+
+/* Form submit button */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.actions input[type="submit"] {
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actions input[type="submit"]:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+/* Form error messages */
+#error_explanation {
+  color: rgb(255, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#error_explanation ul {
+  margin: 0;
+  padding: 0;
+}
+
+#error_explanation li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: rgb(0, 123, 255);
+  color: rgb(255, 255, 255);
+}
+
+.category-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 16px;
+}
+
+.category-header a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.category-header i {
+  font-size: 24px;
+}
+
+.category {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 0.25rem;
+  margin-bottom: 16px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.category-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 8px;
+}
+
+.cname {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ctotal {
+  font-size: 1rem;
+  color: rgb(108, 117, 125);
+  margin: 8px 0 0;
+}
+
+.no-data {
+  font-size: 1.25rem;
+  padding: 16px;
+}
+
+.add-category-link,
+.add-transaction-link {
+  position: fixed;
+  bottom: 4px;
+  width: 100%;
+}
+
+.add-category {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(1, 90, 1);
+  color: rgb(255, 255, 255);
+}
+
+.add-category:hover {
+  opacity: 0.7;
+}
+
+.single-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1em 2em;
+  width: 90%;
+  border: 1px solid var(--text-color);
+  margin-inline: auto;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(143, 146, 143);
+  padding: 16px;
+}
+
+.add-transaction:hover {
+  opacity: 0.7;
+}
