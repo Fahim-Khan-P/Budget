@@ -8,12 +8,21 @@
         <i class="fa-solid fa-right-from-bracket"></i>
     </a>
 </div>
-
+<div class="credential-form">
+<h2>Create new Transaction</h2>
+<div class="container-form">
 <%= form_with(model: @payment, url: category_payments_path) do |form| %>
    
-<div class="form-container">
+<div class="field">
         <%= form.text_field :name, placeholder: "Name" %>
+        </div>
+        <div class="field">
         <%= form.text_field :amount, placeholder: "Amount" %>
+        </div>
+        <div class="actions">
          <%= form.submit "Create", class: "submit-button" %>
-    </div>
+         </div>
 <% end %>
+</div>
+</div>
+
