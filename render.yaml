@@ -4,8 +4,8 @@ databases:
     user: mysite_vh48_user
 
 services:
-  - type: money
-    name: mysite
+  - type: web
+    name: moneyapp
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
