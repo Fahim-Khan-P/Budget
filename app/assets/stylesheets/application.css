@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-body {
+ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -78,7 +78,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin: 60px;
+  margin-left: 30vh;
 }
 
 /* Form title */
@@ -92,7 +93,7 @@ a {
 /* Form fields container */
 .container-form {
   width: 400px;
-  padding: 40px;
+  padding: 60px;
   background-color: rgb(242, 242, 242);
   border-radius: 4px;
 }
@@ -219,6 +220,12 @@ a {
   padding: 16px;
 }
 
+.add-category-link, .add-transaction-link {
+  position: fixed;
+  bottom: 4px;
+  width: 100%;
+}
+
 .add-category {
   display: flex;
   justify-content: center;
@@ -249,7 +256,7 @@ a {
   align-items: center;
   background-color: rgb(143, 146, 143);
   padding: 16px;
-  margin: 25px 20px;
+  /* margin: 25 */
 }
 
 .add-transaction:hover {
