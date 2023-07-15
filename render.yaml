@@ -1,18 +1,18 @@
 databases:
-  - name: khan
-    databaseName: khan
-    user: khan_user
+  - name: mysite
+    databaseName: mysite_vh48
+    user: mysite_vh48_user
 
 services:
-  - type: web
-    name: budgett
+  - type: money
+    name: mysite
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: khan
+          name: mysite_vh48
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
